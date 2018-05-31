@@ -2,19 +2,24 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Todo app</title>
-    <script src="js.js">
+    <title>To do app</title>
+
 
     </script>
   </head>
 
   <body>
-    <h1>TODO APP</h1>
-    <ol>
-      <li>Write users stories</li>
-      <li>break first feature down in to steps</li>
-      <li>make first feature</li>
-      <li>make todo app</li>
-    </ol>
+    <h1>TO DO APP</h1>
+    <form name="inputForm">
+      <input type="text" id="input">
+      <input type="submit" value="Submit" onclick="takeInput(); return false">
+    </form>
+    <ul id="todoList"></ul>
+
+
+
+
+    <script src="js.js" charset=""></script>
+
   </body>
 </html>

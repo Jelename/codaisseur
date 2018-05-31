@@ -1,10 +1,24 @@
-let toDoList = [
-  'Write users stories',
-  'break first feature down in to steps',
-  'make first feature',
-  'make todo app'
+let todoItems = [
 ];
 
-toDoList.forEach(function(task) {
-  console.log(task);
-})
+//var todoList = document.createElement('ul');
+let todoList = document.getElementById('todoList');
+
+function takeInput() {
+  let itemNew = document.getElementById('input').value;
+  document.getElementById('input').value = null;
+  updateList(itemNew);
+}
+
+function updateList(itemNew) {
+    let listItem = document.createElement('li');
+    let todoText = document.createTextNode(itemNew);
+    listItem.appendChild(todoText);
+    todoList.appendChild(listItem);
+    addToList(itemNew);
+  }
+
+  function addToList(itemNew) {
+    todoItems.push(itemNew);
+    console.log(todoItems);
+  }
