@@ -34,9 +34,9 @@ function addToList(itemNew) {
 
 function removeFromList() {
   let itemsToRemove = document.getElementsByTagName('li');
-  itemsToRemove.addEventListener('click', clickme(this));
+  itemsToRemove.target.addEventListener('click', clickme(this));
 }
 
-// function clickme(htmlElement) {
-//   console.log(htmlElement.innerHTML = "DONE");
-// }
+function clickme(htmlElement) {
+  console.log(htmlElement.innerHTML = "DONE");
+}
