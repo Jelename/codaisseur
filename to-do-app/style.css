@@ -18,3 +18,22 @@
                            e) run display function
 3. check the item off the list
 - you always have to break your problem into smaller steps
+*/
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  text-decoration: none;
+  padding-top: 15px;
+  font-family: helvetica,sans-serif;
+}
+
+h1 {
+  font-family: helvetica,sans-serif;
+  font-size:60px;
+  color: gray;
+  text-shadow: rgba(255, 0, 0, 0.5);
+}
